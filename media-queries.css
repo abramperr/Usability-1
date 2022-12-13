@@ -1,0 +1,98 @@
+/* 991 767 479 we need to make 3 break points */
+/* we have laptop first varirent so we are goint to use max width */
+
+@media screen and (max-width: 991px){
+    /* it will run for everything below 991 px */
+    h3{
+        font-size: 1.2rem;
+    }
+    h2{
+        font-size:1.5rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .nav-toggle{
+        display:block;
+        margin-right: 20px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .examples-card{
+        width:calc( 50% - 10px );
+        height: 180px;
+        
+    }
+    .examples-area{
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .cta-section{
+        padding-block:60px;
+    }
+    .logos{
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+    .features-area{
+        gap:20px;
+    }
+}   
+@media  screen and (max-width: 767px) {
+    .examples-card{
+        width:calc( 50% - 10px );
+        height: 300px;
+        
+    }
+    .features-area{
+        gap:10px;
+    }
+    .features-area p{
+        display: none;
+    }
+   
+    .header-section{
+        gap: 10px;
+        flex-direction: column-reverse;
+    }
+    .header-section button{
+        width: 100%;
+    }
+    .header-left{
+        text-align: center;
+    }
+    
+    .primary-button{
+        width: 100%;
+        text-align: center;
+    }
+    .feature-desc{
+        text-align: center;
+        align-items: center;
+    }
+    .big-feature-container{
+        flex-direction: column-reverse;
+    }
+    #second-big-feature{
+        flex-direction: column;
+    }
+
+    .features-card{
+        max-width: 40%;
+        /* gap: 5px; */
+        align-items: center;
+
+    }  
+    .features-area{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .footer-container{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .sub-footer-container{
+        flex-wrap: wrap;
+    }
+}
