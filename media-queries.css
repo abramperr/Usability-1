@@ -4,7 +4,7 @@
 @media screen and (max-width: 991px){
     /* it will run for everything below 991 px */
     h3{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     h2{
         font-size:1.5rem;
@@ -16,9 +16,7 @@
         display:block;
         margin-right: 20px;
     }
-    .nav-links{
-        display: none;
-    }
+    
     .examples-card{
         width:calc( 50% - 10px );
         height: 180px;
@@ -37,6 +35,25 @@
     }
     .features-area{
         gap:20px;
+    }
+    
+    .nav-links{
+        position: absolute;
+        background-color: #fff;
+        left:-100%;
+        top:100%;
+        width: 100%;
+        padding-block: 20px;
+    }
+    .nav-links.active{
+        left:0%;
+    }
+    .nav-links ul{
+        flex-direction: column;
+        
+    }
+    .main-nav{
+        overflow:initial;
     }
 }   
 @media  screen and (max-width: 767px) {
@@ -94,5 +111,23 @@
     }
     .sub-footer-container{
         flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:479px) {
+    :root{
+        --padding-inline-section:10px
+
+    }
+    .features-card{
+        min-width: 100%;
+    }
+    .features-header{
+        margin-bottom: 40px;
+    }
+    .examples-card{
+        width: 100%;
+    }
+    .cta-section-container{
+        text-align: center;
     }
 }

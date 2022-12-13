@@ -24,7 +24,7 @@
                 <a href='#' class="company-logo">
                     <img src="./assetscsspopper/asset 1.png" alt="Logo">
                 </a>
-                <div class="nav-links hidden">
+                <div class="nav-links" id="nav-links">
                     <ul class="flex">
                         <li><a href="#"class='hover-link'>Products</a></li>
                         <li><a href="#"class='hover-link'>Customer</a></li>
@@ -34,7 +34,7 @@
                         <li><a href="#"class='hover-link primary-button'>Sign up</a></li>
                     </ul>
                 </div>
-                <a href="#" class="nav-toggle hover-link">
+                <a href="#" class="nav-toggle hover-link" id="nav-toggle">
                     <i class="fa-solid fa-bars fa-lg"></i>
                 </a>
             </div>
@@ -268,6 +268,16 @@
     </div>
 
     <script src="https://kit.fontawesome.com/334f13968d.js" crossorigin="anonymous"></script> 
+
     <!-- Font awesome kit -->
+    <script>
+        const toggleBoutton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleBoutton.addEventListener('click', ()=>{
+            navLinks.classList.toggle('active');
+        })
+
+    </script>
 </body>
 </html>
